@@ -50,9 +50,9 @@ Semua file video yang tadinya terpisah, akan kita gabungkan semua dan diletakkan
 ## Nomor 3
 
 3.	Sebelum diterapkannya file system ini, Atta pernah diserang oleh hacker LAPTOP_RUSAK yang menanamkan user bernama “chipset” dan “ic_controller” serta group “rusak” yang tidak bisa dihapus. Karena paranoid, Atta menerapkan aturan pada file system ini untuk menghapus “file bahaya” yang memiliki spesifikasi:
-•	Owner Name 	: ‘chipset’ atau ‘ic_controller’
-•	Group Name	: ‘rusak’
-•	Tidak dapat dibaca
+-	Owner Name 	: ‘chipset’ atau ‘ic_controller’
+-	Group Name	: ‘rusak’
+-	Tidak dapat dibaca
 Jika ditemukan file dengan spesifikasi tersebut ketika membuka direktori, Atta akan menyimpan nama file, group ID, owner ID, dan waktu terakhir diakses dalam file “filemiris.txt” (format waktu bebas, namun harus memiliki jam menit detik dan tanggal) lalu menghapus “file bahaya” tersebut untuk mencegah serangan lanjutan dari LAPTOP_RUSAK.
 
 
@@ -76,12 +76,13 @@ Jika ditemukan file dengan spesifikasi tersebut ketika membuka direktori, Atta a
 5.	Ketika mengedit suatu file dan melakukan save, maka akan terbuat folder baru bernama Backup kemudian hasil dari save tersebut akan disimpan pada backup dengan nama namafile_[timestamp].ekstensi. Dan ketika file asli dihapus, maka akan dibuat folder bernama RecycleBin, kemudian file yang dihapus beserta semua backup dari file yang dihapus tersebut (jika ada) di zip dengan nama namafile_deleted_[timestamp].zip dan ditaruh ke dalam folder RecycleBin (file asli dan backup terhapus). Dengan format [timestamp] adalah yyyy-MM-dd_HH:mm:ss
 
 Catatan: 
-•	Semua nama file dan folder yang terdapat pada soal harus memenuhi syarat soal no. 1 (terenkripsi saat belum di-mount dan terdekripsi saat di-mount)
-•	Tidak diperkenankan menggunakan system() dan exec*(), kecuali ada pengecualian di butir soal.
-•	Untuk soal nomor 3 diharapkan secara manual membuat user dan group-nya. Pengecekan file dilakukan setiap membuka direktori.
-•	Untuk soal nomor 4 dan 5 diperbolehkan menggunakan exec*().
-•	Pengerjaan hanya dilakukan dalam 1 file program C dengan format nama AFSHiaAP_[Kelompok].c . 
-•	File System AFSHiaAP mengarah ke folder /home/[user]/shift4.
+
+-	Semua nama file dan folder yang terdapat pada soal harus memenuhi syarat soal no. 1 (terenkripsi saat belum di-mount dan terdekripsi saat di-mount)
+-	Tidak diperkenankan menggunakan system() dan exec*(), kecuali ada pengecualian di butir soal.
+- Untuk soal nomor 3 diharapkan secara manual membuat user dan group-nya. Pengecekan file dilakukan setiap membuka direktori.
+-	Untuk soal nomor 4 dan 5 diperbolehkan menggunakan exec*().
+-	Pengerjaan hanya dilakukan dalam 1 file program C dengan format nama AFSHiaAP_[Kelompok].c . 
+-	File System AFSHiaAP mengarah ke folder /home/[user]/shift4.
 
 
 ## Cara Mengerjakan Soal Nomor 5
